@@ -6,25 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table, tr, td{
-            border:solid #333;
+        body{
+            padding: 50px;
+        }
+     td, th{
+         padding: 20px;
+            border:1 solid #333;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th{
+            
+            border-color: white;
+            background-color: green;
         }
         
     </style>
 
 </head>
 <body>
-    <table border="1">
+    <table border="1" >
         <tr>
-            <td style="background-color: green;">Họ và Tên</td>
+            <th>Họ và Tên</th>
             <td>Lê thanh H</td>
         </tr>
         <tr>
-            <td style="background-color: green;">Cấp bậc</td>
+            <th>Cấp bậc</th>
             <td>thượng sĩ</td>
         </tr>
         <tr>
-            <td style="background-color: green;">Chức vụ</td>
+            <th>Chức vụ</th>
             <td>Phó bt</td>
         </tr>
     </table>
