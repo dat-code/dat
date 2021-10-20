@@ -1,6 +1,45 @@
-p{
-    color: red;
+#header {
+    background-color: red;
+    height: 100px;
+    color: #000;
+    
 }
-i{
+#mian{
+    background-color: violet;
+     height: 500px;
+     float: left;
+     width: 70%;
+     overflow: scroll;
+     
+}
+#side-bar {
+    background-color: green;
+    height: 500px;
     float: left;
+    width: 30%;
+
+
+}
+#foolter {
+    background-color:blue;
+    height: 100px;
+    clear: both;
+}
+body {
+background-image: url(https://cdn.thukyluat.vn/nhch-images//CauHoi_Hinh/46b540c0-2a37-417b-8cce-deb6e60dc80b.jpg);    
+}
+#header, #mian, #side-bar, #foolter {
+    opacity: 0.8;
+    /* background-repeat: no-repeat; */
+}
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.i1 {
+    height: 100px;
+}
+.i2 {
+    height: 100%;
 }
