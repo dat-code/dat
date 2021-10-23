@@ -5,31 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+     .main {
+         width: 200px;
+         height: 200px;
+         background-color:red;
+         position: relative;
+         /* top: 200px;
+         left: 200px; */
+     }
+     .child {
+         width: 50px;
+         height: 50px;
+         background-color: yellow;
+         position:relative;
+         top: 80px;
+         left: 80px;
+         right: 80px;
+         bottom: 80px;
+     }
+     .header {
+         display: inline;
+     }
+     .header .header-1, .header-2, .header-3, .header-4{
+         display: none;
+     }
+     .header li:hover .header-1 {
+         display: block;
+     }
+    </style>
 </head>
-<style>
-    html, body{
-        padding: 0;
-        margin: 0;
-        /* box-sizing: border-box; */
-    }
-    #box_2{
-        height: 46px;
-        background-color: #D9A957;
-        color: blue;
-        text-align: center;
-        font-size: 14px;
-        
-        
-    }
-    
-    
-</style>
 <body>
-   <div id="box_2">
-      
-        welcom to my house  
-   </div>
-        
+ <div class="main">
+     <div class="child"></div>
+    </div>
+     <h3>Danh sách các b </h3>
+     <ul class="header">
+         <li> <a href="">bBB1</a>
+          <ul class="header-1">
+              <li><a href="">abb1</a></li>
+              <li><a href="">abb2</a></li>
+              <li><a href="">abb3</a></li>
+              <li><a href="">abb4</a></li>
+          </ul>
+        </li>
+        <li><a href="">bBB2</a>
+         <ul class="header-2">
+             <li><a href="">abb5</a></li>
+             <li><a href="">abb6</a></li>
+             <li><a href="">abb7</a></li>
+             <li><a href="">abb8</a></li>
+         </ul>
+        </li>
+           <li> <a href="">bBB3</a>
+            <ul class="header-3">
+                <li><a href="">abb9</a></li>
+                <li><a href="">abb10</a></li>
+                <li><a href="">abb11</a></li>
+                <li><a href="">abb12</a></li>
+            </ul>
+               
+           </li>
+           <li><a href="">b Hỏa Lực</a>
+            <ul class="header-4">
+                <li><a href="">a đại liên</a></li>
+                <li><a href="">a Co 60</a></li>
+            </ul>        
+        </li>
+     </ul>
+
     
+
 </body>
 </html>
