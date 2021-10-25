@@ -1,0 +1,20 @@
+/* chon tất cả h3 là con cháu của d1 */
+.d1 h3 {
+    color: blue;
+}
+/* chọn tất cả h3 là con của d1 */
+.d1 > h3 {
+    color: blueviolet;
+}
+/* chọn tất cả ace kế cận của d1 */
+.d1 + h3 {
+    color: aqua;
+    
+}
+/* chọn tất cả ace chung của d1 */
+.d1 ~ h3 {
+    color: rgb(167, 40, 40);
+}
+a:hover {
+    color:brown
+}

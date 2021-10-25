@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #header 
+        {
+            height: 46px;
+            background-color: black;
+            
+            
+        }
+       .nav li {
+           float: left;
+           list-style-type: none;
+           position: relative;
+           
+       }
+      .nav a {
+           text-decoration: none;
+           line-height: 46px;
+           padding: 0 24px;
+           text-transform: uppercase;
+           display: block;
+           color: aliceblue;
+
+       }
+       a:hover {
+           background-color: brown;
+           padding: 0 24px;
+       }
+       .subnav > li{
+           clear: both;
+           background-color: aqua;
+           /* position: absolute; */
+           display: none;
+       }
+       .subnav > a{
+        text-transform: uppercase;
+         padding-right: 10px;
+         
+       }
+       .nav:hover .subnav > li {
+           display: block;
+       }
+       
+    </style>
+</head>
+<body>
+    <div id="header">
+        <ul class="nav">
+            <li><a href="">home</a></li>
+            <li><a href="">band</a></li>
+            <li><a href="">tour</a></li>
+            <li><a href="">contact</a></li>
+            <li><a href="">more</a>
+               <ul class="subnav">
+                   <li><a href="">lesson 1</a></li>
+                   <li><a href="">lesson 2</a></li>
+                   <li><a href="">lesson 3</a></li>
+               </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
