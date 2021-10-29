@@ -15,6 +15,7 @@
         header {
             height: 46px;
             background-color: #333;
+            clear: both;
         }
         .danhs > li {
             float: left;
@@ -35,13 +36,13 @@
         .con li {
             list-style-type: none;
         }
-        .con>li>a {
+        .con {
             color: #333;
             display: none;
         }
-        .danhs:hover .con>li>a {
-            color: blu;
-            /* display: block; */
+        .demo:hover .con {
+        
+            display: block;
 
         }
       
@@ -79,8 +80,8 @@
      header >a {
          float: right;
      }
-     @media screen and (min-width:500px){
-         body (width: 100%;)
+     @media screen and (max-width:500px){
+         main (width: 100%;)
          
      }
      .a1 {
@@ -96,12 +97,14 @@
     <header>
         <ul class="danhs">
             <li><a href="">Logo</a></li>
-            <li><a href="">Home</a>
+            <li class="demo"><a  href="">Home 
+            </a>
             <ul class="con">
                 <li><a href="">link</a></li>
                 <li><a href="">link</a></li>
                 <li><a href="">link</a></li>
             </ul>
+           
             </li>
             <li><a href="">About</a></li>
             <li><a href="">Projects</a></li>
