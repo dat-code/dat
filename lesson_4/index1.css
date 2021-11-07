@@ -1,20 +1,38 @@
-/* chon tất cả h3 là con cháu của d1 */
-.d1 h3 {
-    color: blue;
-}
-/* chọn tất cả h3 là con của d1 */
-.d1 > h3 {
-    color: blueviolet;
-}
-/* chọn tất cả ace kế cận của d1 */
-.d1 + h3 {
-    color: aqua;
+.pulse {
+    width: 100px;
+    height: 100px;
+    background: #33ff00;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    transform: translate(-505, -50%);
     
+    border: 2px solid #33ff00 ;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 36px #45237a, 0 0 0 40px #56ff00;
 }
-/* chọn tất cả ace chung của d1 */
-.d1 ~ h3 {
-    color: rgb(167, 40, 40);
+.pulse::before,
+.pulse::after{
+    content: "";
+    position: absolute;
+    left: -30%;
+    top: -30%;
+    right: -30%;
+    bottom: -30%;
+    border: 2px solid #33ff00;
+    border-radius: 50%;
+    animation: animate 2s linear infinite;
+
 }
-a:hover {
-    color:brown
+.pulse::after {
+    animation-delay: 1s;
+}
+@keyframes animate {
+    0% {
+        transform: scale(2.0);
+    }
+    100% {
+        transform: scale(0.7);
+    }
 }
